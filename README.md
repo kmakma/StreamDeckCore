@@ -1,5 +1,21 @@
+### Foreword by kmakma
+This project provides a version of [WElRD's](https://github.com/WElRD) [StreamDeckCore](https://github.com/WElRD/StreamDeckCore) which you can swiftly import and use or build a library for further use.\
+Best results are to be expected using _IntelliJ IDEA_ and _Gradle_ (especially since Gradle was used for build-management).
+
+#### How to use
+1. Import/Clone the project
+2. Now you need _purejavahidapi_ (whether you use the original from [nyholku](https://github.com/nyholku/purejavahidapi) or the fork from [WElRD](https://github.com/WElRD/purejavahidapi) doesn't really matter), the project is set to deal with following ways:
+   * install purejavahidapi into your local maven repository **or**
+   * build a jar and copy it into the root folder of the project, doing this you might want to comment out following line in _build.gradle_:\
+   _compile 'purejavahidapi:purejavahidapi:0.0.2'_
+3. Run the gradle build task and you'll find the .jar in .\builds\libs
+    
+If you want to install the StreamDeckCore library into your local maven rep use the install task.
+#### Differences
+Compared to WElRD's project the java sources of the master branch are basically unchanged . Since StreamDeckCore doesn't seem to need the jna dependency I left it out, if you want it back look for the _compile 'net.java.dev.jna:jna:4.5.1'_ line in _build.gradle_.
+
 # StreamDeckCore
-This project provides api acces to any connected Elgato Stream Deck (Called ESD from now on). Windows, Linux and Mac OS X should be supported, but only windows could be tested. _This project is not associated in any way with Elgato Systems._
+This project provides api access to any connected Elgato Stream Deck (Called ESD from now on). Windows, Linux and Mac OS X should be supported, but only windows could be tested. _This project is not associated in any way with Elgato Systems._
 
 ## Basic functionality
 StreamDeckCore provides the following features as of now:
