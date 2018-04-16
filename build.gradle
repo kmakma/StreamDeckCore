@@ -22,4 +22,5 @@ dependencies {
     // compile 'net.java.dev.jna:jna:4.5.1'
     // https://github.com/nyholku/purejavahidapi
     compile 'purejavahidapi:purejavahidapi:0.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
 }
