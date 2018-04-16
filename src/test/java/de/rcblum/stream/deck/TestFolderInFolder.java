@@ -1,4 +1,4 @@
-package test.de.rcblum.stream.deck;
+package de.rcblum.stream.deck;
 
 import java.io.File;
 import java.io.IOException;
